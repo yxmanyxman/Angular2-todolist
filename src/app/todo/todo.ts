@@ -1,3 +1,8 @@
-<h1>
-  {{title}}
-</h1>
+export class Todo{
+  id: number;
+  title: string = '';
+  createDate: Date = new Date();
+  complete: boolean = false;
+
+constructor() {}
+}

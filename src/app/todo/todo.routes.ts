@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Route } from '@angular/router';
+import { todoListComponent } from './list/list.component';
+import { todoDetailComponent } from  './detail/detail.component';
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent {
-  title = 'yxman angular works!';
-}
+export const todoRoutes: Route[] = [
+  {
+    path : 'todo/list',
+    component: todoListComponent
+  },
+  {
+    path:'todo/detail/:id',
+    component: todoDetailComponent
+  }
+];
