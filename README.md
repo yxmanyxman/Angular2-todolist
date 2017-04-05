@@ -28,15 +28,15 @@ Before running the tests make sure you are serving the app via `ng serve`.
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 ## 目录结构：
 
-│  .angular-cli.json.
-│  .editorconfig.
-│  .gitignore.
-│  karma.conf.js.
-│  package.json.
-│  protractor.conf.js.
-│  README.md.
-│  tsconfig.json.
-│  tslint.json.
+│  .angular-cli.json
+│  .editorconfig
+│  .gitignore
+│  karma.conf.js
+│  package.json
+│  protractor.conf.js
+│  README.md
+│  tsconfig.json
+│  tslint.json
 │  │ favicon.ico
 │  │  index.html
 │  │  main.ts
