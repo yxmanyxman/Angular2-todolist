@@ -26,3 +26,62 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## 目录结构：
+
+│  .angular-cli.json
+│  .editorconfig
+│  .gitignore
+│  karma.conf.js
+│  package.json
+│  protractor.conf.js
+│  README.md
+│  tsconfig.json
+│  tslint.json
+│  │ favicon.ico
+│  │  index.html
+│  │  main.ts
+│  │  polyfills.ts
+│  │  styles.css
+│  │  test.ts
+│  │  tsconfig.app.json
+│  │  tsconfig.spec.json
+│  │  typings.d.ts
+│  │  node_modules //依赖包
+│  │  e2e
+│  │  src //源码
+|  │  ├─app
+│  │  │  app.component.css
+│  │  │  app.component.html
+│  │  │  app.component.spec.ts
+│  │  │  app.component.ts
+│  │  │  app.module.ts
+│  │  │  app.routes.ts
+│  │  │  
+│     │  └─todo
+│     |     │  todo.module.ts
+│     |     │  todo.routes.ts
+│     |     │  todo.service.ts
+│     |     │  todo.ts
+│     |     │  
+│     │  ─detail
+│     |     │  detail.component.css
+│     |     │  detail.component.html
+│     |     │  detail.component.ts
+│     |     │      
+│        ─list
+│     |     │  list.component.css
+│     |     │  list.component.html
+│     |     │  list.component.ts
+│     |     │      
+│        ─view
+│     |     │  view.component.css
+│     |     │  view.component.html
+│     |     │  view.component.ts
+│              
+│  │─assets
+│      .gitkeep
+│      
+│  │─environments
+        environment.prod.ts
+        environment.ts
+        
