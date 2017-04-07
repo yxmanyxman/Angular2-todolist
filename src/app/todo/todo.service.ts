@@ -5,7 +5,7 @@ import { Todo } from './todo';
 export class TodoService{
   /* 自增id */
   Id: number = 0;
-  /* todoitems */
+  /* todo items */
   todos: Todo[] = [];
   constructor() {}
   //添加函数
@@ -40,7 +40,7 @@ export class TodoService{
     let toggleTodo = this.updateTodo(todo.id, { complete: !todo.complete });
     return toggleTodo;
   }
-
+  //获取某个todo的id函数
   getTodoId(id: number) {
     return this.todos.filter(todo => todo.id === id).pop(); //pop()返回删除的对应id的todo值
   }

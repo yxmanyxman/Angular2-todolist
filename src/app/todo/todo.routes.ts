@@ -8,7 +8,7 @@ export const todoRoutes: Route[] = [
     component: todoListComponent
   },
   {
-    path:'todo/detail/:id',
+    path:'todo/detail/:id',  //传id参数进去
     component: todoDetailComponent
   }
 ];
