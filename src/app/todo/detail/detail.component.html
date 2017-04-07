@@ -1,3 +1,21 @@
-<h1>
-  {{title}}
-</h1>
+<h3>todo详情</h3>
+<form>
+  <div class="form-group">
+    <label>ID:</label>
+    <span>{{ selectedTodo.id }}</span>
+  </div>
+  <div class="form-group">
+    <label>标题:</label>
+    <span>{{ selectedTodo.title }}</span>
+  </div>
+  <div class="form-group">
+    <label>创建时间:</label>
+    <span>{{ selectedTodo.createDate }}</span>
+  </div>
+  <div class="form-group">
+    <label>完成状态:</label>
+    <span>{{ selectedTodo.complete ? '已完成' : '未完成' }}</span>
+  </div>
+
+</form>
+<button (click)="goBack()">返回</button>

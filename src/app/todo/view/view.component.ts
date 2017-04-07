@@ -9,9 +9,8 @@ import { TodoService } from '../todo.service';
   styleUrls: ['app/todo/view/view.component.css']
 })
 export class todoViewComponent {
-  @input() todo: Todo; //父->子通信,todo的值从父组件list中传下来
-  constructor(private todoService: TodoService, private router: Router){ } //
-
+  @Input() todo: Todo; //父->子通信,todo的值从父组件list中传下来
+  constructor(private todoService: TodoService, private router: Router){ }
   gotoDetail(todo){
     this.router.navigate(['/todo/detail', todo.id]);
   }
