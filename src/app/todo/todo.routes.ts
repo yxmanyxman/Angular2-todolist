@@ -1,14 +1,14 @@
 import { Route } from '@angular/router';
-import { todoListComponent } from './list/list.component';
-import { todoDetailComponent } from  './detail/detail.component';
+import { TodoListComponent } from './list/list.component';
+import { TodoDetailComponent } from './detail/detail.component';
 
-export const todoRoutes: Route[] = [
+export const TodoRoutes: Route[] = [
   {
-    path : 'todo/list',
-    component: todoListComponent
+    path: 'todo/list',
+    component: TodoListComponent
   },
   {
-    path:'todo/detail/:id',  //传id参数进去
-    component: todoDetailComponent
+    path: 'todo/detail/:id',  // 传id参数进去
+    component: TodoDetailComponent
   }
 ];

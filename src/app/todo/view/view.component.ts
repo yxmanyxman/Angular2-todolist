@@ -4,20 +4,20 @@ import { Todo } from '../todo';
 import { TodoService } from '../todo.service';
 
 @Component({
-  selector: 'todo-view',
-  templateUrl: 'app/todo/view/view.component.html',
-  styleUrls: ['app/todo/view/view.component.css']
+  selector: 'app-todo-view',
+  templateUrl: './view.component.html',
+  styleUrls: ['./view.component.css']
 })
-export class todoViewComponent {
-  @Input() todo: Todo; //父->子通信,todo的值从父组件list中传下来
+export class TodoViewComponent {
+  @Input() todo: Todo; // 父->子通信,todo的值从父组件list中传下来
   constructor(private todoService: TodoService, private router: Router){ }
-  gotoDetail(todo){
+  gotoDetail(todo) {
     this.router.navigate(['/todo/detail', todo.id]);
   }
-  toggleComplete(todo){
+  toggleComplete(todo) {
     this.todoService.toggleComplete(todo);
   }
-  deleteTodo(todo){
+  deleteTodo(todo) {
     this.todoService.deleteTodo(todo.id);
   }
 }

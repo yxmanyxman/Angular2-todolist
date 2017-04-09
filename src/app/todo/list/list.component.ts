@@ -3,16 +3,16 @@ import { Todo } from '../todo';
 import { TodoService } from '../todo.service';
 
 @Component({
-  selector: 'todo-list',
-  templateUrl: 'app/todo/list/list.component.html',
-  styleUrls:[ 'app/todo/list/list.component.css']
+  selector: 'app-todo-list',
+  templateUrl: './list.component.html',
+  styleUrls: ['./list.component.css']
 })
-export class todoListComponent {
+export class TodoListComponent {
   newTodo: Todo = new Todo();
-  constructor(private todoService: TodoService){ }  //注入TodoService
+  constructor(private todoService: TodoService) { }  // 注入TodoService
   addTodo() {
-    this.todoService.addTodo(this.newTodo); //返回添加后的service
-    this.newTodo = new Todo(); //???????
+    this.todoService.addTodo(this.newTodo); // 返回添加后的service
+    this.newTodo = new Todo(); // ???????
     console.log(this.newTodo);
   }
   get todos() {

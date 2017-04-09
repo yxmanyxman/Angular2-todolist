@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { todoModule } from './todo/todo.module';
+import { TodoModule } from './todo/todo.module';
 import { routes } from './app.routes';
 
 @NgModule({
@@ -14,7 +14,7 @@ import { routes } from './app.routes';
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(routes),
-    todoModule
+    TodoModule
   ],
   bootstrap: [AppComponent]
 })
