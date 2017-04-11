@@ -19,7 +19,7 @@ export class TodoDetailComponent implements OnInit {
     }
   }
   /* 后退函数 */
-  back() {
+  goBack() {
     window.history.back();
   }
 }

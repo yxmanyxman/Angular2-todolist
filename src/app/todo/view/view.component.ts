@@ -10,7 +10,7 @@ import { TodoService } from '../todo.service';
 })
 export class TodoViewComponent {
   @Input() todo: Todo; // 父->子通信,todo的值从父组件list中传下来
-  constructor(private todoService: TodoService, private router: Router){ }
+  constructor(private todoService: TodoService, private router: Router) { }
   gotoDetail(todo) {
     this.router.navigate(['/todo/detail', todo.id]);
   }
