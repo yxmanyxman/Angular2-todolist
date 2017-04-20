@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { Ng2BootstrapModule } from 'ng2-bootstrap';
 
 import { AppComponent } from './app.component';
 import { TodoModule } from './todo/todo.module';
@@ -18,6 +19,7 @@ import { routes } from './app.routes';
     RouterModule.forRoot(routes),
     TodoModule,
     HttpModule,
+    Ng2BootstrapModule.forRoot()
   ],
   bootstrap: [AppComponent]
 })
