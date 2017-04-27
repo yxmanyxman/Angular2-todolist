@@ -1,3 +1,43 @@
-<h1>Todos</h1>
-<alert type="success">请在👇输入框键入todo并回车添加</alert>
-<router-outlet></router-outlet>
+<!--<h1>Todos</h1>-->
+<div id="surface">
+  <div id="header">
+    <a class="header-logo" href="/" aria-label="Trello首页">
+    <span class="header-logo-loading"></span>
+    <span class="header-logo-default"></span>
+    </a>
+    <div>
+      <a class="header-btn header-boards" href="#">
+        <span class="header-btn-icon icon-lg light"><i class="fa fa-clone" aria-hidden="true"></i></span>
+        <span class="header-btn-text">看板</span>
+      </a>
+    </div>
+    <div class="header-search">
+      <input class="header-search-input" type="text" autocomplete="off" spellcheck="false">
+      <span class="header-search-icon icon-lg icon-search"><i class="fa fa-search" aria-hidden="true"></i></span>
+      <span class="header-search-icon header-search-icon-close icon-lg header-search-icon-dark hide"><i class="fa fa-times" aria-hidden="true"></i></span>
+      <span class="header-search-icon header-search-icon-open icon-lg header-search-icon-dark hide"><i class="fa fa-external-link" aria-hidden="true"></i></span>
+    </div>
+    <div></div>
+    <div class="header-user">
+      <a class="header-btn" aria-label="新建看板或群组" href="#">
+        <span class="header-btn-icon icon-lg"><i class="fa fa-plus" aria-hidden="true"></i></span>
+      </a>
+      <a class="header-btn header-member" aria-label="打开成员菜单" href="#">
+        <span class="member">
+          <span class="member-initials" title="">
+            <font></font>
+          </span>
+          <span class="member-gold-badge" title=""></span>
+        </span>
+        <span class="header-btn-text"></span>
+      </a>
+      <a class="header-btn header-member" aria-label="打开信息菜单" href="#">
+        <span class="header-btn-icon icon-lg"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+      </a>
+      <a class="header-btn" aria-label="通知" href="#">
+        <span class="header-btn-icon icon-lg"><i class="fa fa-bell-o" aria-hidden="true"></i></span>
+      </a>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>

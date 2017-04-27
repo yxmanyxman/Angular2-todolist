@@ -8,3 +8,206 @@ h1 {
   -moz-text-rendering: optimizeLegibility;
   text-rendering: optimizeLegibility;
 }
+#surface {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+#surface>#header {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+#header,.header-btn {
+  position: relative;
+  height: 30px;
+}
+#header {
+  width: 100%;
+  height: 40px;
+  background: #026AA7;
+  overflow: hidden;
+  padding: 5px;
+  z-index: 10;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+}
+.header-logo,.pop-over-card-list{
+  opacity: .5;
+}
+.header-logo {
+  bottom: 0;
+  display: block;
+  left: 50%;
+  top: 5px;
+  margin-left: -40px;
+  text-align: center;
+  -webkit-transition: opacity ease-in;
+  -moz-transition: opacity ease-in;
+  -ms-transition: opacity ease-in;
+  -o-transition: opacity ease-in;
+  transition: opacity ease-in 85ms;
+  z-index: 2;
+}
+.header-logo,.header-logo-default{
+  height: 30px;
+  width: 5pc; /* 派卡（Picas）绝对长度单位。 1in = 2.54cm = 25.4 mm = 72pt = 6pc = 96px,此处等于80px,logo大小是80px*30px */
+  position: absolute;
+}
+.header-logo-default{
+  background: url(https://a.trellocdn.com/images/50b4ebc64391dc394a38e73aed57f0e2/header-logo.png) top right no-repeat;
+  background-size: 5pc 30px;
+  left: 0;
+  top: 0;
+}
+.header-logo-loading {
+  background: url(https://a.trellocdn.com/images/d73159084f5122775d4d2fac6060ddf5/header-loading-logo.gif);
+  -webkit-background-size: 18px 18px;
+  -webkit-background-size: 18px 18px;
+  background-size: 18px 18px;
+  display: none;
+  width: 18px;
+  height: 18px;
+  left: 2px;
+  position: absolute;
+  top: 6px;
+}
+.header-btn {
+  background: -webkit-linear-gradient(top, rgba(255,255,255,.3) 0,rgba(255,255,255,.2) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,.3) 0, rgba(255,255,255, .2) 100%);
+  color: #ffffff;
+  display: block;
+  font-weight: 700;
+  line-height: 30px;
+  margin-right: 8px;
+  min-width: 30px;
+  padding: 0;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+  float: left;
+}
+.icon-lg {
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0 8px;
+  color: #ffffff;
+}
+.header-btn,.header-boards {
+  padding-left: 26px;
+}
+.header-btn-icon {
+  font-size: 16px;
+  line-height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header-btn-text {
+  padding: 0 8px;
+}
+.header-search {
+  float: left;
+  margin: 0 8px 0 0;
+  position: relative;
+  z-index: 1;
+}
+.header-search-input {
+  background-color: rgba(255,255,255,.3);
+  border-radius: 3px;
+  border: none;
+  color: rgba(255,255,255,.5);
+  float: left;
+  font-size: 13px;
+  height: 30px;
+  margin: 0;
+  min-height: 30px;
+  padding-right: 30px;
+  padding-left: 8px;
+  line-height: 19px;
+  -webkit-transition: width 150ms;
+  transition: width 150ms;
+  width: 180px;
+  z-index: 1;
+}
+.header-search-icon {
+  cursor: pointer;
+  position: absolute;
+  font-size: 16px;
+  top: 0;
+  right: 0;
+  -webkit-transition: background 85ms,color 85ms;
+  transition: background 85ms,color 85ms;
+  z-index: 2;
+}
+.header-search-icon-close {
+
+}
+.header-search-icon-open {
+  right: 24px;
+  top: 0;
+}
+.header-search-icon-dark {
+  color: rgba(0,0,0,.4)!important;
+}
+.hide {
+  display: none;}
+.header-user {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.member {
+  background-color: #D6DADC;
+  border-radius: 3px;
+  color: #4d4d4d;
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  left: -26px;
+  margin: 0 4px 4px 0;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  z-index: 0;
+}
+.member-initials {
+  display: block;
+  font-size: 9pt;
+  font-weight: 700;
+  height: 30px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  line-height: 30px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+}
+.member-gold-badge {
+  display: none;
+  height: 7px;
+  width: 11px;
+  top: 1px;
+}
+.member-gold-badge,.member-type {
+  position: absolute;
+  right: 1px;
+  z-index: 3;
+}
